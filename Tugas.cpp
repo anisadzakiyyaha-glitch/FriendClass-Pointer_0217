@@ -28,3 +28,8 @@ void outputData() {
         cout << "Keliling Layang-Layang : " << hitungKeliling() << endl;
     }
   friend double kelilingLayang(LayangLayang &l, BelahKetupat &b);
+
+  class BelahKetupat {
+private:
+    double sisi, d1, d2;
+};
