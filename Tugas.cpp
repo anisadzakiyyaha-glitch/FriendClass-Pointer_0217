@@ -42,3 +42,16 @@ public:
         cout << "Diagonal 2 : "; cin >> d2;
     }
 };
+
+double hitungLuas() {
+        return 0.5 * d1 * d2;
+    }
+
+    double hitungKeliling() {
+        return 4 * sisi;
+    }
+
+    void outputData() {
+        cout << "Luas Belah Ketupat     : " << hitungLuas() << endl;
+        cout << "Keliling Belah Ketupat : " << hitungKeliling() << endl;
+    }
