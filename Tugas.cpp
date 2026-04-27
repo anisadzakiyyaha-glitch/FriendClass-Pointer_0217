@@ -27,3 +27,4 @@ void outputData() {
         cout << "Luas Layang-Layang     : " << hitungLuas() << endl;
         cout << "Keliling Layang-Layang : " << hitungKeliling() << endl;
     }
+  friend double kelilingLayang(LayangLayang &l, BelahKetupat &b);
