@@ -61,3 +61,17 @@ public:
 double kelilingLayang(LayangLayang &l, BelahKetupat &b) {
     return 2 * (l.sisi1 + l.sisi2);
 }
+
+int main() {
+    LayangLayang layang;
+    layang.inputData();
+    layang.outputData();
+
+    BelahKetupat ketupat;
+    ketupat.inputData();
+    ketupat.outputData();
+
+    cout << "Keliling Layang-Layang (friend) : " << kelilingLayang(layang, ketupat) << endl;
+
+    return 0;
+}
