@@ -32,7 +32,7 @@ public:
 };
 
 class BelahKetupat {
-    private:
+private:
     double sisi, d1, d2;
 
 public:
@@ -41,9 +41,8 @@ public:
         cout << "Diagonal 1 : "; cin >> d1;
         cout << "Diagonal 2 : "; cin >> d2;
     }
-};
 
-double hitungLuas() {
+    double hitungLuas() {
         return 0.5 * d1 * d2;
     }
 
@@ -56,4 +55,9 @@ double hitungLuas() {
         cout << "Keliling Belah Ketupat : " << hitungKeliling() << endl;
     }
 
-     friend double kelilingLayang(LayangLayang &l, BelahKetupat &b);
+    friend double kelilingLayang(LayangLayang &l, BelahKetupat &b);
+};
+
+double kelilingLayang(LayangLayang &l, BelahKetupat &b) {
+    return 2 * (l.sisi1 + l.sisi2);
+}
